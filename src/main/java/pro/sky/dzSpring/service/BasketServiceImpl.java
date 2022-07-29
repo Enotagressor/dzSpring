@@ -2,6 +2,7 @@ package pro.sky.dzSpring.service;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Service
-@Scope("prototype")
+@SessionScope
 public class BasketServiceImpl implements BasketService{
 
     private List<Integer> basket;
